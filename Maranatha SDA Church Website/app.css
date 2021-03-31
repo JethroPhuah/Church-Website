@@ -1,0 +1,544 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Merriweather;
+  }
+
+.NavHeader{  
+    height: 45px;
+    width: 100%;
+    top: 0px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 10px 8px #888888;
+    z-index: 1;
+}
+#logo{
+    float: left;
+    width: 45px;
+    
+}
+.dropdown-menu{
+    float: left;
+    margin-left:350px;
+}
+.Nav{
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.Navnames{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+    
+
+.dropdown-msg {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    margin-left: -20px;
+    margin-top: 6px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+.dropdown-msg a{
+    background-color: white;
+    list-style-type: none;
+    display: block; 
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+    
+}
+
+
+.dropdown-msg a:hover {
+    background-color: #888888; 
+}
+
+.Nav:hover .dropdown-msg{
+    display:block;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    z-index:2;
+ 
+  }
+  
+.bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 5px;
+    color: black;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+.scroll{
+    float: left;
+    position: fixed;
+    top: 200px;
+    list-style-type: none;
+    margin-left: 30px;
+    z-index: 2;
+    
+}
+.scroll a{
+    display: block; 
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.arrowindividual{
+    display: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: -2px;
+    margin-left: -10px;
+    position: fixed;
+}
+.show{
+    display: inline-block;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    top: 70px;
+  }
+
+.backgroundimg{
+    display: none;
+    top: 70px;
+    width: 1460px;
+    height: 650px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: absolute;
+    transition: 0.6s ease;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade { /*the fade here refer to the previous "animation name: FADE*/
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.slidesImg {
+    vertical-align: middle;
+    height: 570px;
+}
+.mySlides{
+    display:none;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 25px 16px;
+margin-top: -22px;
+color: rgb(219, 205, 205);
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease; /*takes 0.6s to change color*/
+border-radius: 0 3px 3px 0;
+user-select: none; /* when i double click on it, it will not be highlighted*/
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+.dot{
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    bottom: 5px;
+    display: inline-block;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;  /* background color indicated at hover change at ease in 0.6s */
+}
+
+.active, .dot:hover{ /* when active then change the background color */
+    background-color: #717171;
+}
+
+.service{
+    display: block;
+    height: 650px;
+    margin-top: 110px;
+    width: 1510px;
+    background-color: rgb(22, 22, 53);
+   
+}
+
+.titlesecond{
+    margin-left: 500px;
+}
+#title{
+    margin-top: 15px;
+    float: left;
+    color: white;
+    
+}
+#visitus{
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    color: black;
+    margin-left: 300px;
+    margin-top: 18px;
+    background-color: rgb(248, 249, 252);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+#visitus:hover{
+    background-color: rgb(163, 158, 158);
+}
+
+.service h2{
+    display: inline-block;
+    color: white;
+    margin-left: 250px;
+}
+
+.titlethird{
+    display:block;
+}
+
+iframe{
+    float: left;
+    margin-left: 250px;
+    display: block;
+    
+}
+
+.worshipService{
+    display: inline-block;
+    flex: left;
+    color: white;
+    margin-left: 200px;
+    border: dotted whitesmoke;
+}
+.worshipService h3{
+    text-align: center;
+}
+.worshipService div{
+    padding-bottom: 10px;
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+.events{
+    display: block;
+    height: 1000px;
+    width: 1510px;
+    background-color: thistle;
+}
+
+.titleforevent{
+    margin-left: 350px;
+    
+}
+
+#titleevent{
+    margin-top: 15px;
+    float: left;
+    color: black;
+}
+
+#moreEvent{
+    text-decoration: none;
+    font-size: 17px;
+    float: left;
+    color: white;
+    margin-left: 600px;
+    margin-top: 18px;
+    background-color: rgb(16, 16, 17);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+#moreEvent:hover{
+    background-color: red;
+}
+
+.titleforeventtext{
+    margin-top: 120px;
+    margin-left: 350px;
+    position: absolute;
+
+}
+
+.eventgrid{
+    display: grid;
+    margin-top: 200px;
+    margin-left: 350px;
+    grid-template-columns: repeat(3,277px);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+#box1{
+    background-color: white;
+    height: 280px;
+   
+}
+#box1 div{
+    text-align: center;
+    color: red;
+}
+#box1 img{
+    height: 140px;
+}
+.far{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.fa{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#indiEvent{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    color: white;
+    margin-top: 30px;
+    margin-left: 5px;
+    background-color: rgb(16, 16, 17);
+    padding: 5px 82px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+#indiEvent:hover{
+    background-color: red;
+}
+#box2{
+    background-color: white;
+    height: 280px;
+  
+}
+
+#box3{
+    background-color: white;
+    height: 280px;
+  
+}
+
+#box4{
+    background-color: white;
+    height: 280px;
+  
+}
+
+#box5{
+    background-color: white;
+    height: 280px;
+ 
+}
+
+#box6{
+    background-color: white;
+    height: 280px;
+    
+}
+
+
+.prayer{
+    display: block;
+    height: 550px;
+    width: 1510px;
+    background-color: rosybrown;
+    margin-top: -21px;
+    
+}
+
+.prayercontent{
+    margin-left: 350px;
+}
+
+.leftside{
+    float: left;
+}
+
+.rightside{
+    width: 700px;
+    float: left;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+#prayerRoom{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(16, 16, 17);
+    padding: 10px 82px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+#prayerRoom:hover{
+    background-color: red;
+}
+
+.give img{
+    width: 1510px;
+    height: 550px;
+    position: absolute;
+}
+
+.givecontent{
+    position: relative;
+    color: black;
+    margin-left: 350px;
+}
+
+#giveOnline{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    color: white;
+    margin-top: 50px;
+    background-color: rgb(16, 16, 17);
+    padding: 10px 82px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+#giveText{
+    font-size:18px;
+}
+#giveOnline:hover{
+    background-color: red;
+}
+
+footer{
+    height: 200px;
+    width: 1510px;
+    background-color: white;
+}
+
+.footerContent{
+    display: block;
+    text-align: center;
+    margin-top: 370px;
+}
+
+.footerContent a{
+    font-size: 50px;
+    color: black;
+}
+
+#logofooter{
+    height: 70px;
+}
+
+.icons{
+    display: inline-block;
+}
+
+.icons span{
+    padding: 5px 20px;
+}
+.icons img{
+    height: 25px;
+}
+
+#contactus{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1500px){
+    .dropdown-menu{
+        margin-left: 200px;
+    }
+}

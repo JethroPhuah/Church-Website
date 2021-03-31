@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="UTF-8">
+    <meta name = "keywords" content = "HTML">
+    <meta name = "description" content = "Free tutorials">
+    <meta name = "author" content = "Jethro Phuah">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Maranatha SDA Church</title>
+    <link
+      href='https://fonts.googleapis.com/css?family=Merriweather'
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container" onclick="changetoX(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav class = NavHeader>
+        <a href ="#" target = "_blank" > <!-- target = _blank opens you another window -->
+            <img id = 'logo' src ="SDA.png" /> </a>
+        <ul class = dropdown-menu> 
+            <li class = Nav>
+                <a class = Navnames id = titlenav1>About us</a> 
+                <ul class = dropdown-msg>
+                    <li><a href="#">Mission &amp; Beliefs</a></li>
+                    <li><a href="#">Service Timings</a></li>
+                    <li><a href="#">Bible Study Information </a></li>
+                    <li><a href="#">Latest Announcements</a></li>
+                    <li><a href="#">Annual General<br/>Meeting 2020</a></li>
+                    <li><a href="#">Special Notices</a></li>
+                </ul>
+            </li>
+        
+            <li class = Nav> 
+                <a class = Navnames id = titlenav2 >Our Ministry</a> 
+                <ul class = dropdown-msg>
+                    <li><a href="#">Children Ministry</a></li>
+                    <li><a href="#">Youth Ministry</a></li>
+                    <li><a href="#">Women Ministry</a></li>
+                    <li><a href="#">Men Ministry</a></li>
+                </ul>
+            </li>
+            <li class = Nav> 
+                <a class = Navnames id = titlenav2 >Pay it Forward</a> 
+                <ul class = dropdown-msg>
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">Our Beneficiaries</a></li>
+                </ul>
+            </li>
+            <li class = Nav> 
+                <a class = Navnames id = titlenav2 >Media</a> 
+                <ul class = dropdown-msg>
+                    <li><a href="#">Sermon</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Music</a></li>
+                </ul>
+            </li>
+            <li class = Nav> 
+                <a class = Navnames id = titlenav2 >Give</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div>
+        <img class = "backgroundimg fade" src = "MYyouths.jpg" style = "width: 100%">
+        <img class = "backgroundimg fade" src = "outings.jpg"  style = "width: 100%">
+        <img class = "backgroundimg fade" src = "MYyouths2.jpg" style = "width: 100%">
+    </div>
+    <div>
+        <ul class = scroll>
+            <li><a href = "#titleforservice" onclick = "arrow(1)"><span class = arrowindividual>&#10095;</span> Service</a></li>
+            <li><a href = "#titleforevent" onclick = "arrow(2)"><span class = arrowindividual>&#10095;</span> Events</a></li>
+            <li><a href = "#titleforprayer" onclick = "arrow(3)"><span class = arrowindividual>&#10095;</span> Prayer</a></li>
+            <li><a href = "#titleforgive" onclick = "arrow(4)"><span class = arrowindividual>&#10095;</span> Give</a></li>
+        </ul>
+      
+    </div>
+ 
+    <div class = slideshow-container>
+        <div class = mySlides>
+            <img class = slidesImg src = "MYyouths2.jpg" style = "width: 100%">
+            <div class = text> Youth Ministry</div>
+        </div>
+        <div class = mySlides>
+            <img class = slidesImg src = "MYyouths.jpg" style = "width: 100%">
+            <div class = text> Weekly cellgroups</div>
+        </div>
+        <div class = mySlides>
+            <img class = slidesImg src = "outings.jpg" style = "width: 100%">
+            <div class = text> Weekly Fun</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <div class = service id = titleforservice>
+        <br>
+        <br>
+        <br>
+        <div class = titlesecond>
+            <h1 id = title>Maranatha is gathering online!</h1>
+            <a id = visitus href = "https://www.youtube.com/channel/UCUrTLAX4T97hmi27lqI_J4A" target = "_blank">Visit Us &#10095;</a>
+        </div>
+        <div>
+            <h2>In light of the COVID-19 pandemic, out of love for people, and responsibility towards the nation, we have moved all our gatherings online till end of June.</h2>
+            <h2>Our weekend services are catered for people from all walks of life. Come find your place!</h2>
+        </div>
+        <div class = titlethird>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tzu4ueXzAmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class = worshipService>
+                <div><h3>Saturday</h3></div>
+                <div>Morning Sabbath School------------- 9am</div>
+                <div>Sermon-------------------------- 11am</div>
+                <div>Lunch--------------------------- 12pm</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = events id = titleforevent>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = titleforevent>
+            <h1 id = titleevent>Events</h1>
+            <a id = moreEvent href = "https://adventist.org.sg/congress/" target = "_blank">More Events &#10095;</a>
+        </div>
+        <div class = titleforeventtext>
+            <div>We seek to actively engage our community with love and good times.</div>
+            <br>
+            
+            <div>Join us at our upcoming events and get connected!</div>
+        </div>
+        <div class = eventgrid>
+            <div id = box1>
+                <img src = "itstartswithme.jpg" style = "width: 100%">
+                <br>
+                <div>It starts with me</div>
+                <i class='far fa-calendar-alt'> 31 May | 10am, 2:30pm, 5pm, 6:30pm</i>
+                <i class="fa fa-map-marker"> FB online, live</i>
+                <a id = indiEvent href = "https://adventist.org.sg/congress/" target = "_blank">View More &#10095;</a>
+            </div>
+            <div id = box2>2</div>
+            <div id = box3>3</div>
+            <div id = box4>4</div>
+            <div id = box5>5</div>
+            <div id = box6>6</div>
+        </div>
+    </div>
+    <div class = prayer id = titleforprayer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = prayercontent>
+            <div class = leftside>
+                <div><h1>PRAY</h1></div>
+                <div><h1>TOGETHER</h1></div>
+                <div><h1>&amp</h1></div>
+                <div><h1>STAND IN THE GAP</h1></div>
+            </div>
+            <div class = rightside>
+                <div>Stand in the gap of prayer and intercession as we seek God’s hand in this COVID-19 situation. If you have a prayer request, we want to pray for you.</div>
+                <a id = prayerRoom href = "https://adventist.org.sg/congress/" target = "_blank">Prayer Meeting Every Fri 8pm &#10095;</a>
+            </div>
+        </div>
+    </div>
+    <div class = give id = titleforgive>
+        <img src ="give.jpg">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = givecontent>
+            <div><h1>GIVE</h1></div>
+            <div id = giveText>Generosity is a privilege. All that we have comes from God, let us continue to be good stewards of what He has given us.</div>
+            <a id = giveOnline href = "https://adventist.org.sg/congress/" target = "_blank">Give Online &#10095;</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class = footerContent>
+            <div><a href ="#" target = "_blank"><img id = logofooter src = SDA.png></a></div>
+            <div class = icons>
+                <span><img src = facebook.png></span>
+                <span><a href = https://www.instagram.com/maranatha_youths/ target="_blank"><img src = instagram.png></a></span>
+                <span id = contactus>Contact us</span>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+
+</body>
+</html>
